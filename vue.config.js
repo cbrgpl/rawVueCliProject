@@ -3,8 +3,16 @@ module.exports = {
 		config
 			.plugin('html')
 			.tap(args => {
-				args[0].title = 'Readit'
+				args[0].title = 'Raw Vue Project'
 				return args
 			})
+			.end()
 	},
+	css: {
+		loaderOptions: {
+		  sass: {
+				prependData: ``,
+		 },
+		},
+	  },
 }

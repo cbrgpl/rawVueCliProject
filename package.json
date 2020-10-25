@@ -27,6 +27,7 @@
 		"eslint-plugin-jsx-a11y": "^6.3.1",
 		"eslint-plugin-vue": "^6.2.2",
 		"node-sass": "^4.12.0",
+		"rfs": "^9.0.3",
 		"sass-loader": "^8.0.2",
 		"vue-template-compiler": "^2.6.11"
 	},
@@ -82,8 +83,8 @@
 			"comma-dangle": [
 				"error",
 				{
-					"arrays": "never",
-					"objects": "always",
+					"arrays": "always-multiline",
+					"objects": "always-multiline",
 					"imports": "never",
 					"exports": "never",
 					"functions": "never"
@@ -110,16 +111,32 @@
 					"alignAttributesVertically": true
 				}
 			],
-			"vue/html-self-closing": [
+			"vue/html-self-closing": 0,
+			"vue/singleline-html-element-content-newline": [
 				"error",
 				{
-					"html": {
-						"void": "never",
-						"normal": "always",
-						"component": "always"
-					},
-					"svg": "always",
-					"math": "always"
+					"ignoreWhenNoAttributes": true,
+					"ignoreWhenEmpty": true,
+					"ignores": [
+						"b-col"
+					]
+				}
+			],
+			"vue/html-closing-bracket-newline": [
+				"error",
+				{
+					"singleline": "never",
+					"multiline": "never"
+				}
+			],
+			"vue/max-attributes-per-line": [
+				"error",
+				{
+					"singleline": 5,
+					"multiline": {
+						"max": 4,
+						"allowFirstLine": false
+					}
 				}
 			]
 		}
