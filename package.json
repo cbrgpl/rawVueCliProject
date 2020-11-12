@@ -138,6 +138,13 @@
 						"allowFirstLine": false
 					}
 				}
+			],
+			"vue/html-quotes": [
+				"error",
+				"double",
+				{
+					"avoidEscape": false
+				}
 			]
 		}
 	},

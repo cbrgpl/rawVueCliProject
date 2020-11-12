@@ -1,13 +1,14 @@
 <template>
-  
+	<div>
+		welcome
+	</div>
 </template>
 
 <script>
 export default {
-    name: "Welcome"
+	name: "Welcome",
 }
 </script>
 
-<style>
-
+<style lang="scss">
 </style>
