@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div key="">
 		welcome
 	</div>
 </template>

@@ -56,6 +56,10 @@
 		],
 		"rules": {
 			"no-mixed-spaces-and-tabs": 0,
+			"quotes": [
+				"error",
+				"double"
+			],
 			"indent": [
 				"error",
 				"tab",
